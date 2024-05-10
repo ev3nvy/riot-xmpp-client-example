@@ -1,0 +1,14 @@
+*
+
+!src/
+!src/**/*.mjs
+
+!.editorconfig
+!.gitattributes
+!.gitignore
+!LICENSE-APACHE
+!LICENSE-MIT
+
+!package.json
+!pnpm-lock.yaml
+!README.md

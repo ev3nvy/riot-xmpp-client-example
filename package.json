@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "riot-xmpp-client-example",
+  "version": "0.0.1",
+  "author": "ev3nvy",
+  "engines": {
+    "node": ">=18"
+  },
+  "description": "Example project for connecting to riot xmpp servers using xmpp.js.",
+  "repository": "github:ev3nvy/riot-xmpp-client-example",
+  "license": "(MIT OR Apache-2.0)",
+  "homepage": "https://github.com/ev3nvy/riot-xmpp-client-example#readme",
+  "bugs": {
+    "url": "https://github.com/ev3nvy/riot-xmpp-client-example/issues"
+  },
+  "funding": {
+    "type": "github sponsors",
+    "url": "https://github.com/sponsors/ev3nvy"
+  },
+  "main": "src/index.mjs"
+}
