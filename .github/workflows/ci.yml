@@ -1,0 +1,27 @@
+name: CI
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  biome:
+    name: biome ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Biome
+        uses: biomejs/setup-biome@v2
+        with:
+          version: latest
+
+      - name: biome ci
+        run: biome ci .

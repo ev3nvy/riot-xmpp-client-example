@@ -1,5 +1,9 @@
 *
 
+!.github/
+!.github/workflows/
+!.github/workflows/ci.yml
+
 !patches/
 !patches/*.patch
 
