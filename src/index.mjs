@@ -3,6 +3,7 @@ import { createInterface } from "node:readline/promises";
 import { client, xml } from "@xmpp/client";
 // import debug from "@xmpp/debug";
 
+import { getRosterXml, parseRoster } from "./roster.mjs";
 import { Mechanism as MechanismRiotRso } from "./saslRiotRso.mjs";
 import { Mechanism as MechanismRiotRsoPas } from "./saslRiotRsoPas.mjs";
 
@@ -24,6 +25,16 @@ function handleOffline(_xmpp, _el) {
  * @type {import('./index').XmppEventHandler<'stanza'>}
  */
 async function handleStanza(xmpp, stanza) {
+    if (stanza.is("iq") && stanza.getAttr("type") === "result") {
+        for (const child of stanza.getChildren("query")) {
+            const roster = parseRoster(child);
+            if (roster === null) continue;
+
+            console.log("Received friends list:");
+            console.dir(roster, { depth: null });
+        }
+    }
+
     if (stanza.is("message")) {
         await xmpp.send(xml("presence", { type: "unavailable" }));
         await xmpp.stop();
@@ -38,6 +49,8 @@ async function handleOnline(xmpp, jid) {
 
     // makes itself available
     await xmpp.send(xml("presence"));
+    // fetch friends list
+    await xmpp.send(getRosterXml);
 
     // sends a chat message to itself
     const message = xml("message", { type: "chat", to: jid }, xml("body", {}, "hello world"));
