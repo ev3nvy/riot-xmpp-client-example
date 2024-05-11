@@ -9,6 +9,7 @@
 !LICENSE-APACHE
 !LICENSE-MIT
 
+!biome.jsonc
 !package.json
 !pnpm-lock.yaml
 !README.md

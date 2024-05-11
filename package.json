@@ -17,5 +17,8 @@
     "type": "github sponsors",
     "url": "https://github.com/sponsors/ev3nvy"
   },
-  "main": "src/index.mjs"
+  "main": "src/index.mjs",
+  "devDependencies": {
+    "@biomejs/biome": "=1.7.3"
+  }
 }
