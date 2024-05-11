@@ -3,6 +3,9 @@ import { createInterface } from "node:readline/promises";
 import { client, xml } from "@xmpp/client";
 // import debug from "@xmpp/debug";
 
+import { Mechanism as MechanismRiotRso } from "./saslRiotRso.mjs";
+import { Mechanism as MechanismRiotRsoPas } from "./saslRiotRsoPas.mjs";
+
 /**
  * @type {import('./index').XmppEventHandler<'error'>}
  */
@@ -85,6 +88,9 @@ async function authenticate(auth, mechanism) {
         // },
         credentials: authenticate,
     });
+
+    xmpp.sasl.use(MechanismRiotRsoPas);
+    xmpp.sasl.use(MechanismRiotRso);
 
     // uncomment below to enable verbose logging
     // debug(xmpp, true);
