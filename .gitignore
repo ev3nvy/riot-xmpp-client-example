@@ -1,5 +1,8 @@
 *
 
+!patches/
+!patches/*.patch
+
 !src/
 !src/**/*.mjs
 !src/**/*.d.ts

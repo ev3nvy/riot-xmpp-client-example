@@ -22,6 +22,11 @@
     "@xmpp/client": "=0.13.1",
     "@xmpp/debug": "=0.13.0"
   },
+  "pnpm": {
+    "patchedDependencies": {
+      "@xmpp/sasl@0.13.1": "patches/@xmpp__sasl@0.13.1.patch"
+    }
+  },
   "devDependencies": {
     "@biomejs/biome": "=1.7.3",
     "@types/xmpp__client": "=0.13.3",

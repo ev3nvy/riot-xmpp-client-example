@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@xmpp/sasl@0.13.1':
+    hash: 2sde4dxfmjnzip5qg3j3vncis4
+    path: patches/@xmpp__sasl@0.13.1.patch
+
 importers:
 
   .:
@@ -1559,7 +1564,7 @@ snapshots:
       '@xmpp/reconnect': 0.13.1
       '@xmpp/resolve': 0.13.1
       '@xmpp/resource-binding': 0.13.1
-      '@xmpp/sasl': 0.13.1
+      '@xmpp/sasl': 0.13.1(patch_hash=2sde4dxfmjnzip5qg3j3vncis4)
       '@xmpp/sasl-anonymous': 0.13.1
       '@xmpp/sasl-plain': 0.13.1
       '@xmpp/sasl-scram-sha-1': 0.13.1
@@ -1646,7 +1651,7 @@ snapshots:
     dependencies:
       sasl-scram-sha-1: 1.2.1
 
-  '@xmpp/sasl@0.13.1':
+  '@xmpp/sasl@0.13.1(patch_hash=2sde4dxfmjnzip5qg3j3vncis4)':
     dependencies:
       '@xmpp/base64': 0.13.1
       '@xmpp/error': 0.13.1
