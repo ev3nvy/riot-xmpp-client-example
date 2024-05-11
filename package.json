@@ -18,7 +18,13 @@
     "url": "https://github.com/sponsors/ev3nvy"
   },
   "main": "src/index.mjs",
+  "dependencies": {
+    "@xmpp/client": "=0.13.1",
+    "@xmpp/debug": "=0.13.0"
+  },
   "devDependencies": {
-    "@biomejs/biome": "=1.7.3"
+    "@biomejs/biome": "=1.7.3",
+    "@types/xmpp__client": "=0.13.3",
+    "@types/xmpp__connection": "=0.13.3"
   }
 }

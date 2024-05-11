@@ -4,7 +4,7 @@
         "enabled": true
     },
     "files": {
-        "include": ["src/**/*.mjs"]
+        "include": ["src/**/*.d.ts", "src/**/*.mjs"]
     },
     "formatter": {
         "enabled": true,

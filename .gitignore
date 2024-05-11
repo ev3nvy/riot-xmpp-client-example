@@ -2,6 +2,7 @@
 
 !src/
 !src/**/*.mjs
+!src/**/*.d.ts
 
 !.editorconfig
 !.gitattributes
