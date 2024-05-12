@@ -73,10 +73,7 @@ this project by you, as defined in the Apache-2.0 license, shall be dual license
 without any additional terms or conditions.
 
 <!-- Project links -->
-[crates-io]: https://crates.io/crates/rman
 [discord]: https://discord.gg/5QVVBKBvpQ
-[docs-rs]: https://docs.rs/rman
-[github-pages-docs]: https://ev3nvy.github.io/rman-rs
 [repository]: https://github.com/ev3nvy/riot-xmpp-client-example
 
 
