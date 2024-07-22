@@ -20,10 +20,12 @@
             "complexity": {
                 "noExcessiveCognitiveComplexity": "off"
             },
+            "correctness": {
+                "noNodejsModules": "off"
+            },
             "nursery": {
                 "all": true,
-                "noConsole": "off",
-                "noNodejsModules": "off"
+                "noConsole": "off"
             },
             "suspicious": {
                 "noConsoleLog": "off"
