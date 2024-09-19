@@ -7,11 +7,7 @@
         "include": ["src/**/*.d.ts", "src/**/*.mjs"]
     },
     "formatter": {
-        "enabled": true,
-        "indentStyle": "space",
-        "indentWidth": 4,
-        "lineEnding": "lf",
-        "lineWidth": 100
+        "useEditorconfig": true
     },
     "linter": {
         "enabled": true,
