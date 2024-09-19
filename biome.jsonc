@@ -24,10 +24,10 @@
                 "noNodejsModules": "off"
             },
             "nursery": {
-                "all": true,
-                "noConsole": "off"
+                "all": true
             },
             "suspicious": {
+                "noConsole": "off",
                 "noConsoleLog": "off"
             },
             "style": {
