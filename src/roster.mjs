@@ -105,15 +105,12 @@ function parseRoster(element) {
 
     const friends = items
         .filter((item) => item.subscription === "both")
-        // biome-ignore lint/correctness/noUnusedFunctionParameters: subscription is intentionally dropped here
         .map(({ subscription, ...other }) => other);
     const incoming = items
         .filter((item) => item.subscription === "pending_in")
-        // biome-ignore lint/correctness/noUnusedFunctionParameters: subscription is intentionally dropped here
         .map(({ subscription, ...other }) => other);
     const outgoing = items
         .filter((item) => item.subscription === "pending_out")
-        // biome-ignore lint/correctness/noUnusedFunctionParameters: subscription is intentionally dropped here
         .map(({ subscription, ...other }) => other);
 
     return {
