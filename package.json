@@ -30,6 +30,6 @@
   "devDependencies": {
     "@biomejs/biome": "=1.9.4",
     "@types/xmpp__client": "=0.13.3",
-    "@types/xmpp__connection": "=0.13.3"
+    "@types/xmpp__connection": "=0.14.0"
   }
 }
